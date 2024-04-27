@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chronic Disease Prediction</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    
+        body {
+            background-image: url('kidney.jpg'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    
+  </style>
+</head>
+<body>
+  <div class="container mt-4">  <h1 class="text-center">Chronic Disease Prediction</h1>
+    <form action="/predict" method="post">
+      <div class="form-group">
+        <label for="age">Age:</label>
+        <input type="number" class="form-control" id="age" name="age" required>
+      </div>
+      <div class="form-group">
+        <label for="blood_pressure">Blood Pressure:</label>
+        <input type="number" class="form-control" id="blood_pressure" name="blood_pressure" required>
+      </div>
+      <div class="form-group">
+        <label for="specific_gravity">Specific Gravity:</label>
+        <input type="number" class="form-control" id="specific_gravity" name="specific_gravity" required>
+      </div>
+      <div class="form-group">
+        <label for="albumin">Albumin:</label>
+        <input type="number" class="form-control" id="albumin" name="albumin" required>
+      </div>
+      <div class="form-group">
+        <label for="sugar">Sugar:</label>
+        <input type="number" class="form-control" id="sugar" name="sugar" required>
+      </div>
+      <div class="form-group">
+        <label for="blood_urea">Blood Urea:</label>
+        <input type="number" class="form-control" id="blood_urea" name="blood_urea" required>
+      </div>
+      <div class="form-group">
+        <label for="serum_creatinine">Serum Creatinine:</label>
+        <input type="number" class="form-control" id="serum_creatinine" name="serum_creatinine" required>
+      </div>
+      <div class="form-group">
+        <label for="potassium">Potassium:</label>
+        <input type="number" class="form-control" id="potassium" name="potassium" required>
+      </div>
+      <div class="form-group">
+        <label for="haemoglobin">Haemoglobin:</label>
+        <input type="number" class="form-control" id="haemoglobin" name="haemoglobin" required>
+      </div>
+      <div class="form-group">
+        <label for="red_blood_cell_count">Red Blood Cell Count:</label>
+        <input type="number" class="form-control" id="red_blood_cell_count" name="red_blood_cell_count" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Predict</button>
+    </form>
+  </div>
+</body>
+</html>
